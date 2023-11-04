@@ -1,0 +1,47 @@
+1.ArrayList Operation
+
+class Geeks
+{
+    // Function to insert element
+    public static void insert(ArrayList<Character> clist, char c)
+    {
+       
+        //add c to clist
+        clist.add(c);
+    }
+    
+    // Function to count frequency of element
+    public static void freq(ArrayList<Character> clist, char c)
+    {
+     
+        if(clist.contains(c))
+        System.out.println(Collections.frequency(clist,c));
+        else
+        System.out.println("Not Present");
+        
+    }
+}
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2.Search in a row-column sorted Matrix
+class Solution 
+{ 
+    //Function to search a given number in row-column sorted matrix.
+	static boolean search(int matrix[][], int n, int m, int x) 
+	{  
+	    int l = 0;
+	    int h = n-1;
+	    
+	    while(l<n && h>0){
+	        if(matrix[l][h]==x){
+	            return true;
+	        }else if(matrix[l][h]<x){
+	            l++;
+	        }else{
+	            h--;
+	        }
+	    }
+	    return false;
+	} 
+} 
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+3.
